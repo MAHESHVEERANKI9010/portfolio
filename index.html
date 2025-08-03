@@ -2,58 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>masters | Portfolio</title>
-  <link rel="stylesheet" href="new.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahesh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      background: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #ccc;
+      animation: fadeIn 2s ease-in-out;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid rgba(0, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+      transform: perspective(600px) rotateX(0deg);
+    }
+    section:hover {
+      transform: perspective(600px) rotateX(2deg);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+    }
+    h2 {
+      font-size: 2rem;
+      color: #00e6e6;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li::before {
+      content: "✨ ";
+    }
+    li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+    }
+    .contact a {
+      color: #00ffe7;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      margin-right: 15px;
+      color: #00fff7;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #000c1a;
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="hero-section">
-    <div class="container">
-      <h1 class="hero-title">Mahesh babu</h1>
-      <p class="hero-subtitle">Creative Developer | Cybersecurity Enthusiast | Future Technologist</p>
+
+  <header>
+    <h1>Mahesh Babu Veeranki</h1>
+    <p>Full Stack Web Developer | B.Tech CSIT | SRKR Engineering College</p>
+    <div class="social-icons" style="margin-top: 1rem;">
+      <a href="https://linkedin.com/in/maheshveeranki" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/maheshveeranki" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:mahesh@example.com"><i class="fas fa-envelope"></i></a>
     </div>
   </header>
 
-  <main class="container">
-    <section class="about-section">
-      <h2>About Me</h2>
-      <p>
-        I'm an enthusiastic tech explorer from SRKR Engineering College, Bhimavaram. I love developing beautiful web apps, securing systems, and learning new technologies every day.
-      </p>
+  <main>
+    <section>
+      <h2>🧠 About Me</h2>
+      <p>I’m Mahesh, a creative Full Stack Developer with a strong passion for building futuristic, user-friendly web applications. I specialize in creating full-stack solutions that merge design with functionality.</p>
     </section>
 
-    <section class="skills-section">
-      <h2>Skills</h2>
+    <section>
+      <h2>💡 Skills</h2>
       <ul>
-        <li>🔹 Full Stack Web Development (HTML, CSS, JS)</li>
-        <li>🔹 C++ & DSA</li>
-        <li>🔹 Cybersecurity & Network Tools</li>
-        <li>🔹 IoT & Embedded Systems</li>
+        <li>Frontend: HTML5, CSS3, JavaScript (ES6+), React.js</li>
+        <li>Backend: Node.js, Express.js, REST APIs</li>
+        <li>Languages: Java, Python, C++</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Version Control: Git, GitHub</li>
+        <li>Other: Responsive Design, API Integration</li>
       </ul>
     </section>
 
-    <section class="projects-section">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Personal Firewall (Python)</h3>
-        <p>A custom-built Python firewall with rule-based packet filtering and logging system.</p>
-      </div>
-      <div class="project-card">
-        <h3>Clean Energy Awareness Hub</h3>
-        <p>Web platform that promotes green living, supports multilingual content and community submissions.</p>
-      </div>
+    <section>
+      <h2>🌍 Projects</h2>
+      <ul>
+        <li><strong>Portfolio Website</strong> – A world-class digital resume with a premium look (this site!).</li>
+        <li><strong>Weather App</strong> – Real-time updates using OpenWeather API with geolocation.</li>
+        <li><strong>Task Manager</strong> – React app with persistent storage and animations.</li>
+      </ul>
     </section>
 
-    <section class="contact-section">
-      <h2>Contact</h2>
-      <p>📧 hari@example.com | 📱 +91 9876543210</p>
+    <section>
+      <h2>📬 Contact</h2>
+      <div class="contact">
+        <p>Email: <a href="mailto:mahesh@example.com">mahesh@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/maheshveeranki" target="_blank">linkedin.com/in/maheshveeranki</a></p>
+        <p>GitHub: <a href="https://github.com/maheshveeranki" target="_blank">github.com/maheshveeranki</a></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Hari Krishna. All rights reserved.</p>
+    <p>&copy; 2025 Mahesh Babu Veeranki. Designed with 💙 for the digital world.</p>
   </footer>
 
-  <script src="new.js"></script>
 </body>
 </html>
